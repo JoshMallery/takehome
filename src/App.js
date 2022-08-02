@@ -7,8 +7,6 @@ const App = () => {
 
   const [articles, setArticles] = useState([])
 
-
-
 useEffect(()=>{
   fetch('https://api.nytimes.com/svc/mostpopular/v2/viewed/1.json?api-key=ENPdIXAc6HGMh1AdMtzKQcdnGsYAYv0e')
     .then(response => response.json())
@@ -18,7 +16,10 @@ useEffect(()=>{
   return (
     <div className="App">
       <TopSection />
-      <ArticleContainer articles={articles}/>
+      <div >
+        <ArticleContainer className="container" articles={articles}/>  
+      </div>
+      
     </div>
   );
 }
