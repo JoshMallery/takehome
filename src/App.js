@@ -16,8 +16,8 @@ useEffect(()=>{
   return (
     <div className="App">
       <TopSection />
-      <div >
-        <ArticleContainer className="container" articles={articles}/>  
+      <div>
+        {articles.length > 0 ? <ArticleContainer articles={articles}/> : <div>Loading...</div>}
       </div>
       
     </div>
