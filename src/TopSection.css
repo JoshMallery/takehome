@@ -1,0 +1,13 @@
+.topSection {
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navButton {
+
+}
+
+.active {
+    visibility: hidden;
+}
